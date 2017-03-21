@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_right"
+    android:id="@+id/ll_weixin"
+    >
+
+    <ImageView
+        android:id="@+id/im_weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/weixin_icon"
+        />
+
+    <TextView
+        android:id="@+id/tv_weixi_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/im_weixin"
+        android:padding="10dp"
+        android:textColor="@color/other_blue"
+        android:textSize="28sp"
+        />
+    <View
+        android:id="@+id/view_line_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@drawable/bottom_search_bar"
+        android:layout_below="@+id/tv_weixi_username"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        ></View>
+    <TextView
+        android:id="@+id/tv_weixin_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line_bar"
+
+        android:padding="10dp"
+        android:textColor="@color/other_yellow"
+        android:textSize="28sp" />
+</RelativeLayout>
